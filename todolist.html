@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--Link for CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+     <!--Links for javascript and jQuery-->
+     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/js/all.min.js"></script>
+     <!--Type font awesome cdn in browser.there u  find the cdnjs site.There copy the url of all.js latest version-->
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+     <!--defer in script will work on advanced browsers-->
+     <script  defer src="todolist.js"></script>
+     <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+    <div class="container">
+        <h1 align="center">Todolist</h1>
+        <!--Input box-->
+        <div class="row">
+            <div class="col-md-7">
+                <div class="form-group">
+                    <label for="inpNewTask">New Task</label>
+                    <input type="text" class="form-control" id="inpNewTask" aria-describedby="newtaskHelp" placeholder="Enter the name of the Task">
+                    <small id="newtaskHelp" class="form-text text-muted">A short one line description of the task</small>
+            
+                </div>
+                
+            </div>
+            <!--Buttons-->
+            <div class="col-md-5 row">
+                <!--Col 12 eans take the entire screen space by default-->
+                <div class="col-12 col-sm-3 col-md-6 p-1">
+                    <button class="btn btn-success col" disabled id="btnAdd">
+                        <!--fas  is for solid icons.i tag is for icons-->
+                        <i class="fas fa-plus-square"></i>ADD
+                        </button>
+
+                </div>
+                <div class="col-12 col-sm-3 col-md-6 p-1">
+                    <button class="btn btn-danger col" disabled  id="btnReset">
+                        <i class="fas fa-backspace"></i> Reset
+                    </button>
+
+                </div>
+                <div class="col-12  col-sm-3 col-md-6 p-1">
+                    <button class="btn btn-info col" disabled id="btnSort">
+                        <!--fas  is for solid icons.i tag is for icons-->
+                        <i class="fas fa-sort-amount-down"></i>Sort
+                        </button>
+
+                </div>
+                <div class="col-12 col-sm-3 col-md-6 p-1">
+                    <button class="btn btn-warning col" disabled id="btnCleanup">
+                        <i class="fas fa-trash-alt"></i> Clean
+                    </button>
+
+                </div>
+                
+                <!--<div class="row">
+                    
+                    
+
+                </div>-->
+                <!--<div class="row">
+                    
+                  
+
+                </div>-->
+               
+
+            </div>
+
+        </div>
+        <!--Buttons
+        <div class="row px-4">
+            
+        </div>-->
+        <!--To do list group-->
+        <ul class="row list-group m-2" id="ulTasks">
+            <!--If  we write the list item as disabled.Then it will turns light grey in color
+            <li class="list-group-item disabled">Cras justo odio</li>
+            <li class="list-group-item">Dapibus ac facilisis in</li>-->
+           <!--<li class="list-group-item">Morbi leo risus</li>
+            <li class="list-group-item">Porta ac consectetur ac</li>
+            <li class="list-group-item">Vestibulum at eros</li>-->
+        </ul>
+          
+
+    </div>
+    
+</body>
+</html>
+<!--Bootstrap cdn includes all the necessary we need.
+By defult it contain all the jquery-->
